@@ -38,8 +38,9 @@ export const TaskInput = (props: TInputProps) => {
         variant='outlined'
         onChange={handleInputChange}
         value={formValue}
+        data-cy='input'
       />
-      <Button variant='contained' type='submit' disabled={!formValue}>
+      <Button variant='contained' type='submit' disabled={!formValue} data-cy='addButton'>
         Добавить
       </Button>
     </form>
