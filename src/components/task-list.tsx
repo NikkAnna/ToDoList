@@ -56,9 +56,9 @@ export const TaskList = (props: TTaskList) => {
                     setTodos={props.setTodos}
                   />
                 ))}
+                {!props.todos.length && <NoTasksPage />}
               </li>
             )}
-
             {value === '2' && (
               <li>
                 {activeTodos.map((todo, index) => (
@@ -69,6 +69,7 @@ export const TaskList = (props: TTaskList) => {
                     setTodos={props.setTodos}
                   />
                 ))}
+                {!activeTodos.length && <NoTasksPage />}
               </li>
             )}
             {value === '3' && (
@@ -81,10 +82,10 @@ export const TaskList = (props: TTaskList) => {
                     setTodos={props.setTodos}
                   />
                 ))}
+                {!doneTodos.length && <NoTasksPage />}
               </li>
             )}
           </ul>
-          {!props.todos.length && <NoTasksPage />}
         </TabContext>
       </Box>
     </section>

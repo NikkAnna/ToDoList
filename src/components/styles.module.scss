@@ -1,5 +1,6 @@
 $maincolor: #000;
 $secondarycolor: #f0f2f3;
+$bordercolor: #B8BABB;
 
 body {
     margin: 0;
@@ -27,7 +28,7 @@ body {
 }
 
 .card {
-    border: 1px solid $secondarycolor;
+    border: 1px solid $bordercolor;
     margin: 20px 0 0 0;
 }
 
@@ -54,8 +55,9 @@ body {
 .ocat {
     width: 35vh;
     margin: auto;
-    padding: 3rem;
+    padding: 1rem;
 }
+
 .mear,
 .meye {
     background-color: $maincolor;
