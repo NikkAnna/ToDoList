@@ -56,7 +56,7 @@ export const TaskCard = (props: TCardProps) => {
         disablePadding
         data-cy='taskCard'
       >
-        <ListItemButton role={undefined} dense >
+        <ListItemButton role={undefined} dense>
           <ListItemIcon>
             <Checkbox
               edge='start'
@@ -64,7 +64,7 @@ export const TaskCard = (props: TCardProps) => {
               tabIndex={-1}
               disableRipple
               onClick={handleCheckboxClick}
-              
+              data-cy='checkbox'
             />
           </ListItemIcon>
           <ListItemText id={props.todo.value} primary={props.todo.value} />

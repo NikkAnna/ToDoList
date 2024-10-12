@@ -42,6 +42,7 @@ export const TaskList = (props: TTaskList) => {
                 label='Завершенные'
                 value='3'
                 sx={{ textTransform: 'none' }}
+                data-cy='done'
               />
             </TabList>
           </Box>
